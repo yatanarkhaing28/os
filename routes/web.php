@@ -27,6 +27,8 @@ Route::resource('brands','BrandController');
 
 Route::resource('categories','CategoryController');
 
+Route::resource('subcategories','SubcategoryController');
+
 
 
 
