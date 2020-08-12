@@ -1,0 +1,27 @@
+Items Manage
+-------------
+
+-create resource route
+-create controller (--resource)
+-show route list(route:list)
+-create blades(4 for get method)
+-call specified view from method
+-use store method (form action)
+	-dd()
+	-validation
+	-if include image,upload
+	-data insert
+	-redierect -> (index)
+-show in database
+
+
+identifying foreign key
+-----------------------
+
+$table->unsignedBigInteger('category_id');
+$table->timestamps();
+
+$table->foreign('category_id')
+->references('id');
+->on('categories');
+->onDelete('cascade');
