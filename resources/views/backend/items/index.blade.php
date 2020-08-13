@@ -46,16 +46,19 @@
 	<div class="modal fade" id="mymodal">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<h4 class="modal-title">
-					Name:<p id="name"></p>
-				</h4>
-			</div>
+				{{-- <h4 class="modal-title">
+					
+				</h4> --}}
+			
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-md-6">
-						<img src="" class="img-fluid w-25" id="photo">
+						<img src="" class="img-fluid w-50" id="photo">
 					</div>
 					<div class="col-md-6">
+						<h4 class="modal-title">
+							Name:<p id="name"></p>
+						</h4>
 						
 						Price: <strong id="price"></strong><br>
 						Description: <strong id="desc"></strong>
@@ -64,6 +67,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 	@endsection
 
 	@section('script')

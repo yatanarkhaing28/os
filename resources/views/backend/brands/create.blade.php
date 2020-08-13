@@ -21,9 +21,22 @@
 				@csrf
 				
 				<div class="form-group">
-					<label>Name</label>
-					<input type="text" name="name" class="form-control">
+					<label for="title">Name</label>
+					<input id="title" type="text" name="name" class="@error('title') is-invalid @enderror">
+					@error('title')
+					<div class="alert alert-danger">{{ $message }}</div>
+					@enderror
 				</div>
+
+				{{-- <label for="title">Post Title</label>
+
+				<input id="title" type="text" class="@error('title') is-invalid @enderror">
+
+				@error('title')
+				<div class="alert alert-danger">{{ $message }}</div>
+				@enderror --}}
+
+
 				<div class="form-group">
 					<label>Photo</label>
 					<input type="file" name="photo" class="form-control-file">
