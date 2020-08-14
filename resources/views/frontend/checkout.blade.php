@@ -10,10 +10,11 @@
 			<div class="offset-md-2 col-md-8">
 				<h3 class="py-3">Check Out</h3>
 				<div class="table-responsive">
-					<table class="table">
+					<table class="table table-bordered">
 						<thead>
 							<tr>
 								<th>No.</th>
+								<th>Photo</th>
 								<th>Item Name</th>
 								<th>Price</th>
 								<th>Qty</th>
@@ -22,38 +23,29 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Acer</td>
-								<td>700000</td>
-								<td><button class="min btn btn-outline-secondary btn-sm mx-2">-</button>1<button class="max btn btn-outline-secondary btn-sm mx-2">+</button></td>
-								<td>700000</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Mouse</td>
-								<td>15000</td>
-								<td><button class="min btn btn-outline-secondary btn-sm mx-2">-</button>2<button class="max btn btn-outline-secondary btn-sm mx-2">+</button></td>
-								<td>300000</td>
-								
-							</tr>
+
 						</tbody>
 					</table>
 				</div>
 			</div>
 			<div class="offset-md-2 col-md-8">
 				<div class="form-group">
-
+					<textarea class="form-control notes" placeholder="Note"></textarea>
 					<input type="hidden" name="" class="total">
 				</div>
 			</div>
 
 			<div class="offset-md-2 col-md-4 text-left">
-				<a href="product.php" class="btn btn-info">Continue Shopping</a>
+				<a href="{{route('homepage')}}" class="btn btn-info">Continue Shopping</a>
 			</div>
+
+			@auth
 			<div class="offset-md-2 col-md-4 text-left">
 				
-				<button class="btn btn-primary buy_now">Buy Now</button>
+				<a href="#" class="btn btn-primary buy_now">Checkout</a>
+			@else
+				<a href="{{route('login')}}" class="btn btn-info float-right">Login To CheckOut</a>
+			@endauth
 				
 			</div>
 		</div>
@@ -63,4 +55,9 @@
 
 
 
+@endsection
+@section('script')
+  <script type="text/javascript" src="{{asset('frontend/js/script.js')}}">
+    
+  </script>
 @endsection

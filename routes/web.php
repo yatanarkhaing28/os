@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     // return 'Hello Laravel';
 // });
 
+// Frontend
 Route::get('/','FrontendController@home')->name('homepage');
 Route::get('item1','FrontendController@item1')->name('itemspage');
 Route::get('detail/{id}','FrontendController@detail')->name('detailpage');
@@ -29,6 +30,11 @@ Route::get('profile','FrontendController@profile')->name('profilepage');
 
 
 
+// Backend
+Route::middleware('auth')->group(function(){
+
+Route::resource('orders','OrderController');
+
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
 
 Route::resource('items','ItemController');
@@ -39,9 +45,18 @@ Route::resource('brands','BrandController');
 Route::resource('categories','CategoryController');
 
 Route::resource('subcategories','SubcategoryController');
+});
+// End Backend
 
 
 
 
 
 
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
