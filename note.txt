@@ -21,14 +21,60 @@ Items Manage
 -List,Edit,Delete(brand)
 -Validation Error,Delete Image if upload new image(brand)
 
-UI
---
--filter item page
--item detail page
--checkout page
--profile page
--register page
--login page
+
+14.9.2020
+----------
+-Frontend
+	-filter item page(data binding)
+	-profile page(link/retrieve)
+	-auth(multi role)
+
+-Backend
+	-Order Retrieve
+		-(backend/orders)
+		-create view(index.blade.php)
+		-show table(order list)
+		-OrderController / index
+
+	-Retrieve,Update,Delete(category,subcategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
