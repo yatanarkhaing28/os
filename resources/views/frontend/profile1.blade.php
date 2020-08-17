@@ -24,10 +24,10 @@
                 
 
                  <div class="form-group row">
-                 
+                 {{--  <input type="file" name="user_profile" class=" form-control-file" placeholder="Profile"> --}}
                  <div class="col-lg-3"></div>
                  <div class="col-lg-3"> 
-                 	<img src="{{asset('frontend/frontendimg/acer1.jpeg')}}" style="border-radius: 50%; width: 150px; height: 150px">
+                 	<img src="{{asset('backend/loginimg/profile.jpg')}}" style="border-radius: 50%; width: 150px; height: 150px">
                  </div>
                   
  
@@ -46,7 +46,24 @@
                 
                 </div>
 
-                
+                {{-- <div class="form-group">
+                  <input type="password" name="user_password" value="" class="form-control form-control-user" placeholder="Password">
+                </div> --}}
+
+                {{-- <div class="form-group">
+                  <input type="password" name="user_cpassword" value="" class="form-control form-control-user" placeholder="Confirm Password">
+               
+                </div> --}}
+
+              {{--   <div class="form-group">
+                  <input type="text" name="user_phone" value="{{Auth::user()->password}}" class="form-control form-control-user" placeholder="Role Number">
+               
+                </div> --}}
+
+                {{-- <div class="form-group">
+                  <textarea class="form-control" placeholder="Address" name="user_address"></textarea>
+               
+                </div> --}}
 
 
                 <input type="submit" class="btn btn-primary btn-user btn-block" value="Change">
@@ -58,7 +75,12 @@
 
 
 
-             
+             {{--  <div class="text-center">
+                <a class="small" href="forgot-password.html">Forgot Password?</a>
+              </div>
+              <div class="text-center">
+                <a class="small" href="login.html">Already have an account? Login!</a>
+              </div> --}}
             </div>
           </div>
         </div>
