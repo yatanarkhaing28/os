@@ -35,7 +35,6 @@ Route::get('profile','FrontendController@profile')->name('profilepage');
 // Backend
 Route::middleware('role:admin')->group(function(){
 
-Route::resource('orders','OrderController');
 
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
 
@@ -57,9 +56,12 @@ Route::resource('subcategories','SubcategoryController');
 
 
 
+Route::resource('orders','OrderController');
 
 
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/getitem', 'FrontendController@getItems')->name('getitems');
