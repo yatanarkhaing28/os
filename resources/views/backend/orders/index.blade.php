@@ -1,7 +1,7 @@
 @extends('backendtemplate')
 @section('content')
 	<div class="container-fluid">
-		<h2 class="d-inline-block">Item List (Table)</h2>
+		<h2 class="d-inline-block">Order List (Table)</h2>
 		<a href="{{route('items.create')}}" class="btn btn-success float-right">Add Item</a>
 	<table class="table table-bordered">
 		<thead>

@@ -38,6 +38,15 @@ Items Manage
 
 	-Retrieve,Update,Delete(category,subcategory)
 
+17.9.2020
+---------
+Frontend
+	-profile UI
+	-filter item page(data binding)
+	-if not include(sidebar),center
+Backend
+	-Order Detail
+
 
 
 

@@ -2,6 +2,7 @@
 @section('content')
 <div class="col-lg-9 my-4">
 	<h2 style="text-align: center;">Customer Profile Page</h2>
+	
 	<div class="row my-4">
 
 		<div class="col-md-4">

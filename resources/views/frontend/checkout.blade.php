@@ -39,13 +39,13 @@
 				<a href="{{route('homepage')}}" class="btn btn-info">Continue Shopping</a>
 			</div>
 
-			@auth
+			@role('customer')
 			<div class="offset-md-2 col-md-4 text-left">
 				
 				<a href="#" class="btn btn-primary buy_now">Checkout</a>
 			@else
 				<a href="{{route('login')}}" class="btn btn-info float-right">Login To CheckOut</a>
-			@endauth
+			@endrole
 				
 			</div>
 		</div>
